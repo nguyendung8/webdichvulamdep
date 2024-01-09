@@ -51,9 +51,9 @@
             <li>
               <a href="#">DỊCH VỤ CHĂM SÓC DA <span class="arrow">&#9660;</span></a>
               <ul class="sub-menu">
-                  <li><a href="#">COMBO TẨY DA CHẾT </a></li>
-                <li><a href="#">COMBO TRIỆT LÔNG</a></li>
-                <li><a href="#">COMBO TẮM TRẮNG </a></li>
+                  <li><a href="./taydachet.php">TẨY DA CHẾT </a></li>
+                <li><a href="./trietlong.php">TRIỆT LÔNG</a></li>
+                <li><a href="./tamtrang.php">TẮM TRẮNG </a></li>
               </ul>
             </li>
 
@@ -80,9 +80,9 @@
               <a href="#">THỰC PHẨM UỐNG <span class="arrow">&#9660;</span></a>
 
               <ul class="sub-menu">
-                <li><a href="#">HỖ TRỢ CHỐNG NẮNG-ĐẸP DA </a></li>
-                <li><a href="#">TRẮNG DA, MỜ NÁM, TÀN NHANG </a></li>
-                <li><a href="#">VIÊN UỐNG NỘI TIẾT, SINH LÝ </a></li>
+                <li><a href="./chongnang_depda.php">HỖ TRỢ CHỐNG NẮNG-ĐẸP DA </a></li>
+                <li><a href="./trangda_monam.php">TRẮNG DA, MỜ NÁM, TÀN NHANG </a></li>
+                <li><a href="./noitiet_sinhly.php">VIÊN UỐNG NỘI TIẾT, SINH LÝ </a></li>
 
               </ul>
             </li>
