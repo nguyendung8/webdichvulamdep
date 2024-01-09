@@ -18,8 +18,6 @@
             align-items: center;
             margin: 50px 100px;
         }
-        .box {
-        }
         .name {
             font-size: 19px;
         }

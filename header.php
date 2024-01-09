@@ -22,9 +22,6 @@
         border-top-left-radius: 4px;
         border-bottom-left-radius: 4px;
       }
-      .bottom-contact li {
-        
-      }
     </style>
     
 </head>
