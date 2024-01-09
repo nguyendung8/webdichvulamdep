@@ -28,25 +28,6 @@
   </div>
 
   <main>
-    <section class="products">
-      <h2>Sản phẩm</h2>
-      <div class="product">
-        <img src="htps://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/HTML5_logo.svg/1200px-HTML5_logo.svg.png"
-          alt="Logo HTML5">
-        <h3>Tên sản phẩm</h3>
-        <p>Mô tả sản phẩm</p>
-        <p>Giá: 100.000₫</p>
-        <button>Mua ngay</button>
-      </div>
-      <div class="product">
-        <img src="htps://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/CSS3_logo.svg/1200px-CSS3_logo.svg.png"
-          alt="Logo CSS3">
-        <h3>Tên sản phẩm</h3>
-        <p>Mô tả sản phẩm</p>
-        <p>Giá: 200.000₫</p>
-        <button>Mua ngay</button>
-      </div>
-    </section>
     <section class="contact">
       <h2>Liên hệ</h2>
       <p>Địa chỉ: 123 Main Street</p>
