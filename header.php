@@ -32,7 +32,7 @@
     </div>
     <div class="box_top">
       <div class="box_search">
-        <input type="text" placeholder="Serach here ...">
+        <input type="text" placeholder="Search here ...">
         🔍
       </div>
       <img src="./images/logo.png" alt="">
