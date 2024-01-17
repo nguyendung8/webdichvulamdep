@@ -1,5 +1,10 @@
 <?php
     include('config.php');
+    if(isset($_POST['submit'])) {
+        $search_name = $_POST['search'];
+    } else {
+        $search_name = '';
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -7,7 +12,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Tắm trắng</title>
+    <title>Tìm kiếm sản phẩm</title>
     <style>
         .box-container {
             display: flex;
@@ -43,25 +48,27 @@
 <body>
 <?php include 'header.php'; ?>
 <div class="box-container">
-      <?php  
-         $select_service = mysqli_query($conn, "SELECT * FROM `dichvu` WHERE danhmucdichvu = 3") or die('query failed');
-         if(mysqli_num_rows($select_service) > 0){
-            while($fetch_service = mysqli_fetch_assoc($select_service)){
-      ?>
+    <h1 class="title_search">Danh sách sản phẩm theo từ khóa tìm kiếm của bạn</h1>
+    <?php  
+         $select_products = mysqli_query($conn, "SELECT * FROM `mathang` WHERE tenhang  LIKE '%{$search_name}%'") or die('query failed');
+         if(mysqli_num_rows($select_products) > 0){
+             while($fetch_products = mysqli_fetch_assoc($select_products)){
+                 ?>
                <div style="height: -webkit-fill-available;" method="post" class="box">
                <div class="product_item">
-                   <img style="min-width: 210px; height: 224px" src="uploaded_img/<?php echo $fetch_service['hinhanh']; ?>" alt="">
+                   <img style="min-width: 210px; height: 224px" src="uploaded_img/<?php echo $fetch_products['hinhanh']; ?>" alt="">
                     <div class="product_info">
-                        <div class="name"><?php echo $fetch_service['tendichvu']; ?></div>
-                        <div class="price">Giá: <?php echo $fetch_service['dongia']; ?> VND</div>
-                        <div class="origin">Mô tả: <?php echo $fetch_service['mota']; ?></div>
+                        <div class="name"><?php echo $fetch_products['tenhang']; ?></div>
+                        <div class="price">Giá: <?php echo $fetch_products['dongia']; ?> VND</div>
+                        <div class="origin">Nguồn gốc - Xuất xứ: <?php echo $fetch_products['nguongoc']; ?></div>
+                        <div class="origin">Mô tả: <?php echo $fetch_products['mota']; ?></div>
                     </div>
                </div>
                </div>
       <?php
             }
          }else{
-            echo '<p class="empty">Chưa có sản phẩm được bán!</p>';
+            echo '<p class="empty">Không có sản phẩm phù hợp với yêu cầu tìm kiếm của bạn!</p>';
          }
       ?>
    </div>

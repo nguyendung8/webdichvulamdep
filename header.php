@@ -22,6 +22,23 @@
         border-top-left-radius: 4px;
         border-bottom-left-radius: 4px;
       }
+      .search-icon {
+        position: absolute;
+        left: 1px;
+        top: 6px;
+      }
+      .box_search {
+        padding-right: 0 !important;
+      }
+      .box_search input {
+        margin-right: 0 !important;
+      }
+      .submit {
+        padding: 10px 24px !important;
+        color: #fff;
+        background-color: #D64B95;
+        cursor: pointer;
+      }
     </style>
     
 </head>
@@ -31,11 +48,11 @@
       <h1>SỨC KHỎE VÀ SẮC ĐẸP - TRUNG TÂM CHĂM SÓC DA VÀ TÓC</h1>
     </div>
     <div class="box_top">
-      <div class="box_search">
-        <input type="text" placeholder="Search here ...">
-        🔍
-      </div>
-      <img src="./images/logo.png" alt="">
+      <form method="post" action="./product_search.php" class="box_search">
+        <input type="text" placeholder="Search here ..." name="search" value="<?php if(isset($_POST['submit'])) echo $_POST['search'] ?>">
+          <input type="submit" value="Tìm kiếm" class="submit" name="submit">
+      </form>
+      <a href="./home.php"><img src="./images/logo.png" alt=""></a>
       <div class="box_contact">
         <img src="./images/phone.png" alt="">
         <p>09866788999</p>

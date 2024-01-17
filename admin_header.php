@@ -17,6 +17,7 @@
       <a href="admin_products.php" class="logo">Quản lý</a>
       <nav style="margin-bottom: 0px !important;min-height: unset !important;" class="navbar">
          <a style="text-decoration: none !important;" href="admin_products.php">Sản phẩm</a>
+         <a style="text-decoration: none !important;" href="admin_services.php">Dịch vụ chăm sóc da</a>
       </nav>
          <a href="logout.php" class="delete-btn">Đăng xuất</a>
    </div>
