@@ -18,6 +18,9 @@
       <nav style="margin-bottom: 0px !important;min-height: unset !important;" class="navbar">
          <a style="text-decoration: none !important;" href="admin_products.php">Sản phẩm</a>
          <a style="text-decoration: none !important;" href="admin_services.php">Dịch vụ chăm sóc da</a>
+         <a style="text-decoration: none !important;" href="admin_doctors.php">Bác sĩ</a>
+         <a style="text-decoration: none !important;" href="admin_schedules.php">Lịch khám</a>
+         <a style="text-decoration: none !important;" href="admin_messages.php">Tin nhắn</a>
       </nav>
          <a href="logout.php" class="delete-btn">Đăng xuất</a>
    </div>
